@@ -15,98 +15,137 @@
 <body>
 <div class="container">
     <div class="row">
-        weather app
+        <h1 class="main-title">Weather app</h1>
     </div>
     <div class="row">
-        search
+        <div class="input-group input-group-lg mb-3">
+            <input type="text" class="form-control" placeholder="Search for a city" aria-label="Search for a city"
+                   aria-describedby="button-addon2">
+            <button id="btn-search" class="btn btn-outline-primary" type="button">Search</button>
+        </div>
     </div>
     <div class="row">
         <!--                First city-->
         <div class="col-12 col-lg-6 first-city">
             <div class="row">
-                <div class="col"> First city
-                    <div class="col"> den v týdnu</div>
-                    <div class="col">datum</div>
-                    <div class="col">Město</div>
-                    <div class="col">ikonka počasí</div>
-                    <div class="col">teplota</div>
-                    <div class="col">slovní popis počasí</div>
+                <!--                Block 1-->
+                <div class="block-1 rounded-3 col">
+                    <div class="col">
+                        <div class="col">Pondělí</div>
+                        <div class="col">1.1.2023</div>
+                        <div class="col">Praha</div>
+                        <div class="col">
+                            <img src="images/pokus3.png" alt="sun">
+                        </div>
+                        <div class="col"><h2>5°C</h2></div>
+                        <div class="col">slunečno</div>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-7"> block2
-                    <div class="row">
+                <!--                Block 2-->
+                <div class="col-12 col-sm-7 block-2 rounded-3">
+                    <div class="row extra-info">
                         <div class="col">srážky</div>
-                        <div class="col">%</div>
+                        <div class="col weather-icons">5 %</div>
                     </div>
-                    <div class="row">
+                    <div class="row extra-info">
                         <div class="col">vlhkost</div>
-                        <div class="col"> %</div>
+                        <div class="col weather-icons">5 %</div>
                     </div>
-                    <div class="row">
+                    <div class="row extra-info">
                         <div class="col">vítr</div>
-                        <div class="col">m/s</div>
+                        <div class="col weather-icons">10 m/s</div>
                     </div>
-                    <div class="row">
-                        <div class="col col-12 col-sm-6 col-md-4">+1
-                            <div class="row">ikonka počasí</div>
-                            <div class="row">den v týdnu</div>
-                            <div class="row">teplota</div>
+                    <div class="row extra-days mx-auto">
+                        <div class="col col-12 col-sm-6 col-md-4 mb-4 mb-sm-2">
+                            <div class="extra-icons rounded-3 flex-column">
+                                <div class="">
+                                    <img src="images/pokus2.png" alt="sun">
+                                </div>
+                                <div class="">ÚT</div>
+                                <div class="">10° C</div>
+                            </div>
                         </div>
 
-                        <div class="col col-12 col-sm-6 col-md-4">+2
-                            <div class="row">ikonka počasí</div>
-                            <div class="row">den v týdnu</div>
-                            <div class="row">teplota</div>
+                        <div class="col col-12 col-sm-6 col-md-4 mb-4 mb-sm-2">
+                            <div class="extra-icons rounded-3 flex-column">
+                                <div class="">
+                                    <img src="images/pokus2.png" alt="sun">
+                                </div>
+                                <div class="">ST</div>
+                                <div class="">10° C</div>
+                            </div>
                         </div>
-                        <div class="col col-12 col-sm-6 offset-sm-3 offset-md-0 col-md-4">+3
-                            <div class="row">ikonka počasí</div>
-                            <div class="row">den v týdnu</div>
-                            <div class="row">teplota</div>
+                        <div class="col col-12 col-sm-6 offset-sm-3 offset-md-0 col-md-4">
+                            <div class="extra-icons rounded-3 flex-column">
+                                <div class="">
+                                    <img src="images/pokus2.png" alt="sun">
+                                </div>
+                                <div class="">ČT</div>
+                                <div class="">10° C</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!--        Second city-->
-        <div class="col-12 col-lg-6 second city">
-
+        <div class="col-12 col-lg-6 second-city">
             <div class="row">
-                <div class="col">Second city
-                    <div class="col"> den v týdnu</div>
-                    <div class="col">datum</div>
-                    <div class="col">Město</div>
-                    <div class="col">ikonka počasí</div>
-                    <div class="col">teplota</div>
-                    <div class="col">slovní popis počasí</div>
+                <!--                Block 1-->
+                <div class="block-1 rounded-3 col">
+                    <div class="col">
+                        <div class="col">Pondělí</div>
+                        <div class="col">1.1.2023</div>
+                        <div class="col">Praha</div>
+                        <div class="col">
+                            <img src="images/pokus3.png" alt="sun">
+                        </div>
+                        <div class="col"><h2>5°C</h2></div>
+                        <div class="col">slunečno</div>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-7"> block2
-                    <div class="row">
+                <!--                Block 2-->
+                <div class="col-12 col-sm-7 block-2 rounded-3 flex-column">
+                    <div class="row extra-info">
                         <div class="col">srážky</div>
-                        <div class="col">%</div>
+                        <div class="col weather-icons">5 %</div>
                     </div>
-                    <div class="row">
+                    <div class="row extra-info">
                         <div class="col">vlhkost</div>
-                        <div class="col"> %</div>
+                        <div class="col weather-icons">5 %</div>
                     </div>
-                    <div class="row">
+                    <div class="row extra-info">
                         <div class="col">vítr</div>
-                        <div class="col">m/s</div>
+                        <div class="col weather-icons">10 m/s</div>
                     </div>
-                    <div class="row">
-                        <div class="col col-12 col-sm-6 col-md-4">+1
-                            <div class="row">ikonka počasí</div>
-                            <div class="row">den v týdnu</div>
-                            <div class="row">teplota</div>
+                    <div class="row extra-days mx-auto">
+                        <div class="col col-12 col-sm-6 col-md-4 mb-4 mb-sm-2">
+                            <div class="extra-icons rounded-3 flex-column">
+                                <div class="">
+                                    <img src="images/pokus2.png" alt="sun">
+                                </div>
+                                <div class="">ÚT</div>
+                                <div class="">10° C</div>
+                            </div>
                         </div>
 
-                        <div class="col col-12 col-sm-6 col-md-4">+2
-                            <div class="row">ikonka počasí</div>
-                            <div class="row">den v týdnu</div>
-                            <div class="row">teplota</div>
+                        <div class="col col-12 col-sm-6 col-md-4 mb-4 mb-sm-2">
+                            <div class="extra-icons rounded-3 flex-column">
+                                <div class="">
+                                    <img src="images/pokus2.png" alt="sun">
+                                </div>
+                                <div class="">ST</div>
+                                <div class="">10° C</div>
+                            </div>
                         </div>
-                        <div class="col col-12 col-sm-6 offset-sm-3 offset-md-0 col-md-4">+3
-                            <div class="row">ikonka počasí</div>
-                            <div class="row">den v týdnu</div>
-                            <div class="row">teplota</div>
+                        <div class="col col-12 col-sm-6 offset-sm-3 offset-md-0 col-md-4">
+                            <div class="extra-icons rounded-3 flex-column">
+                                <div class="">
+                                    <img src="images/pokus2.png" alt="sun">
+                                </div>
+                                <div class="">ČT</div>
+                                <div class="">10° C</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -114,6 +153,12 @@
         </div>
     </div>
 </div>
+
+<footer>
+    <h5>
+        School project 2023
+    </h5>
+</footer>
 
 
 <!--Bootstrap-->
