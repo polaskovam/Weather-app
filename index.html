@@ -17,9 +17,10 @@
     <div class="row">
         <h1 class="main-title">Weather app</h1>
     </div>
-    <div class="row">
+    <div class="row search-row">
         <div class="input-group input-group-lg mb-3">
-            <input type="text" class="form-control" placeholder="Search for a city" aria-label="Search for a city"
+            <input type="text" class="form-control" id="cityInput" placeholder="Search for a location"
+                   aria-label="Search for a location"
                    aria-describedby="button-addon2">
             <button id="btn-search" class="btn btn-outline-primary" type="button">Search</button>
         </div>
@@ -31,57 +32,57 @@
                 <!--                Block 1-->
                 <div class="block-1 rounded-3 col">
                     <div class="col">
-                        <div class="col">Pondělí</div>
-                        <div class="col">1.1.2023</div>
-                        <div class="col">Praha</div>
+                        <div class="col" id="day-1">Pondělí</div>
+                        <div class="col" id="date-1">1.1.2023</div>
+                        <div class="col" id="town-1">Praha</div>
                         <div class="col">
-                            <img src="images/pokus3.png" alt="sun">
+                            <img id="icon1" src="images/pokus3.png" alt="sun">
                         </div>
-                        <div class="col"><h2>5°C</h2></div>
-                        <div class="col">slunečno</div>
+                        <div class="col"><h2 id="temp-1">5 °C</h2></div>
+                        <div class="col" id="word-temp-1">slunečno</div>
                     </div>
                 </div>
                 <!--                Block 2-->
                 <div class="col-12 col-sm-7 block-2 rounded-3">
                     <div class="row extra-info">
-                        <div class="col">srážky</div>
-                        <div class="col weather-icons">5 %</div>
+                        <div class="col">Precipitation</div>
+                        <div class="col weather-icons" id="precipitation-1">5 %</div>
                     </div>
                     <div class="row extra-info">
-                        <div class="col">vlhkost</div>
-                        <div class="col weather-icons">5 %</div>
+                        <div class="col">Humidity</div>
+                        <div class="col weather-icons" id="humidity-1">5 %</div>
                     </div>
                     <div class="row extra-info">
-                        <div class="col">vítr</div>
-                        <div class="col weather-icons">10 m/s</div>
+                        <div class="col">Wind</div>
+                        <div class="col weather-icons" id="wind-1">10 m/s</div>
                     </div>
                     <div class="row extra-days mx-auto">
                         <div class="col col-12 col-sm-6 col-md-4 mb-4 mb-sm-2">
                             <div class="extra-icons rounded-3 flex-column">
                                 <div class="">
-                                    <img src="images/pokus2.png" alt="sun">
+                                    <img id="icon2" src="images/pokus2.png" alt="sun">
                                 </div>
-                                <div class="">ÚT</div>
-                                <div class="">10° C</div>
+                                <div id="next-day-1">ÚT</div>
+                                <div id="next-day-temp-1">10 °C</div>
                             </div>
                         </div>
 
                         <div class="col col-12 col-sm-6 col-md-4 mb-4 mb-sm-2">
                             <div class="extra-icons rounded-3 flex-column">
                                 <div class="">
-                                    <img src="images/pokus2.png" alt="sun">
+                                    <img id="icon3" src="images/pokus2.png" alt="sun">
                                 </div>
-                                <div class="">ST</div>
-                                <div class="">10° C</div>
+                                <div id="next-day-2">ST</div>
+                                <div id="next-day-temp-2">10 °C</div>
                             </div>
                         </div>
                         <div class="col col-12 col-sm-6 offset-sm-3 offset-md-0 col-md-4">
                             <div class="extra-icons rounded-3 flex-column">
                                 <div class="">
-                                    <img src="images/pokus2.png" alt="sun">
+                                    <img id="icon4" src="images/pokus2.png" alt="sun">
                                 </div>
-                                <div class="">ČT</div>
-                                <div class="">10° C</div>
+                                <div id="next-day-3">ČT</div>
+                                <div id="next-day-temp-3">10 °C</div>
                             </div>
                         </div>
                     </div>
@@ -94,57 +95,57 @@
                 <!--                Block 1-->
                 <div class="block-1 rounded-3 col">
                     <div class="col">
-                        <div class="col">Pondělí</div>
-                        <div class="col">1.1.2023</div>
-                        <div class="col">Praha</div>
+                        <div class="col" id="day-2">Pondělí</div>
+                        <div class="col" id="date-2">1.1.2023</div>
+                        <div class="col" id="town-2">Praha</div>
                         <div class="col">
-                            <img src="images/pokus3.png" alt="sun">
+                            <img id="icon5" src="images/pokus3.png" alt="sun">
                         </div>
-                        <div class="col"><h2>5°C</h2></div>
-                        <div class="col">slunečno</div>
+                        <div class="col"><h2 id="temp-2">5 °C</h2></div>
+                        <div class="col" id="word-temp-2">slunečno</div>
                     </div>
                 </div>
                 <!--                Block 2-->
-                <div class="col-12 col-sm-7 block-2 rounded-3 flex-column">
+                <div class="col-12 col-sm-7 block-2 rounded-3">
                     <div class="row extra-info">
-                        <div class="col">srážky</div>
-                        <div class="col weather-icons">5 %</div>
+                        <div class="col">Precipitation</div>
+                        <div class="col weather-icons" id="precipitation-2">5 %</div>
                     </div>
                     <div class="row extra-info">
-                        <div class="col">vlhkost</div>
-                        <div class="col weather-icons">5 %</div>
+                        <div class="col">Humidity</div>
+                        <div class="col weather-icons" id="humidity-2">5 %</div>
                     </div>
                     <div class="row extra-info">
-                        <div class="col">vítr</div>
-                        <div class="col weather-icons">10 m/s</div>
+                        <div class="col">Wind</div>
+                        <div class="col weather-icons" id="wind-2">10 m/s</div>
                     </div>
                     <div class="row extra-days mx-auto">
                         <div class="col col-12 col-sm-6 col-md-4 mb-4 mb-sm-2">
                             <div class="extra-icons rounded-3 flex-column">
                                 <div class="">
-                                    <img src="images/pokus2.png" alt="sun">
+                                    <img id="icon6" src="images/pokus2.png" alt="sun">
                                 </div>
-                                <div class="">ÚT</div>
-                                <div class="">10° C</div>
+                                <div id="next-day-4">ÚT</div>
+                                <div id="next-day-temp-4">10 °C</div>
                             </div>
                         </div>
 
                         <div class="col col-12 col-sm-6 col-md-4 mb-4 mb-sm-2">
                             <div class="extra-icons rounded-3 flex-column">
                                 <div class="">
-                                    <img src="images/pokus2.png" alt="sun">
+                                    <img id="icon7" src="images/pokus2.png" alt="sun">
                                 </div>
-                                <div class="">ST</div>
-                                <div class="">10° C</div>
+                                <div class="" id="next-day-5">ST</div>
+                                <div class="" id="next-day-temp-5">10 °C</div>
                             </div>
                         </div>
                         <div class="col col-12 col-sm-6 offset-sm-3 offset-md-0 col-md-4">
                             <div class="extra-icons rounded-3 flex-column">
                                 <div class="">
-                                    <img src="images/pokus2.png" alt="sun">
+                                    <img id="icon8" src="images/pokus2.png" alt="sun">
                                 </div>
-                                <div class="">ČT</div>
-                                <div class="">10° C</div>
+                                <div class="" id="next-day-6">ČT</div>
+                                <div class="" id="next-day-temp-6">10 °C</div>
                             </div>
                         </div>
                     </div>
@@ -158,6 +159,9 @@
     <h5>
         School project 2023
     </h5>
+    <h6>
+        Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a>
+    </h6>
 </footer>
 
 

@@ -1,3 +1,8 @@
+:root {
+    --violet: 93, 29, 219;
+    --light-violet: 95, 95, 244;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -9,41 +14,57 @@ body {
     background: radial-gradient(circle, rgba(65, 125, 244, 1) 1%, rgba(24, 63, 139, 1) 59%, rgba(11, 27, 103, 1) 100%);
 }
 
+footer {
+    color: white;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+h5 {
+    margin-bottom: 0;
+}
+
 .container {
     min-height: calc(100% - 50px); /* match the height of footer */
 }
 
 .main-title {
-    margin: 50px 0 30px 0;
+    margin: 90px 0 30px 0;
     text-align: center;
     color: white;
 }
 
+.search-row {
+    margin-bottom: 50px;
+}
+
 .input-group {
     padding: 0 25% 3% 25%;
-    border-color: #5d1ddb;
+    border-color: rgb(var(--violet));
 }
 
 .form-control:focus {
-    border-color: #5d1ddb;
+    border-color: rgb(var(--violet));
     box-shadow: 0 0 0 0.2rem rgba(93, 29, 219, 0.25)
 }
 
 .btn-outline-primary {
     --bs-btn-color: white;
-    --bs-btn-bg: #5d1ddb;
+    --bs-btn-bg: rgb(var(--violet));
     --bs-btn-border-color: white;
     --bs-btn-border-radius: .5rem;
     --bs-btn-hover-color: white;
-    --bs-btn-hover-bg: #5f5ff4;
+    --bs-btn-hover-bg: rgb(var(--light-violet));
     --bs-btn-hover-border-color: white;
     --bs-btn-active-color: white;
-    --bs-btn-active-bg: #5d1ddb;
+    --bs-btn-active-bg: rgb(var(--violet));
     --bs-btn-active-border-color: white;
 }
 
 .block-1 {
-    background: #5d1ddb;
+    background: rgb(var(--violet));
     color: white;
     text-align: center;
     padding: 25px 0 12px 0;
@@ -69,7 +90,7 @@ body {
 }
 
 .extra-icons {
-    background-color: #5f5ff4;
+    background-color: rgb(var(--light-violet));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,14 +102,16 @@ body {
     text-align: right;
 }
 
-footer {
-    color: white;
-    text-align: center;
-    position: relative;
-    width: 100%;
-    height: 50px;
+#icon1, #icon5 {
+    height: 100px;
+    width: 100px;
+    margin: 15px 0 15px 0;
 }
 
+#icon2, #icon3, #icon4, #icon6, #icon7, #icon8 {
+    width: 60px;
+    height: 60px;
+}
 
 @media (min-width: 768px) and (max-width: 992px) {
     .first-city {
@@ -103,6 +126,8 @@ footer {
     .input-group {
         padding: 0 10% 0% 10%;
     }
+
+
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
